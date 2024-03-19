@@ -1,1 +1,109 @@
-A simple temperature converter
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Temperature Converter</title>
+<!--<link rel="stylesheet" href="styles.css">-->
+<style>
+    body{
+    font-family:sans-serif;
+    display: flex;
+    align-items: center;
+    margin: auto;
+    background-color: #c13e95;
+    height: 150vh;
+    justify-content:center;
+  
+}
+button{
+    align-items: center;
+    text-align: center;
+    color: black;
+    background-color:#d784bb;
+    border-radius: 8px;
+  padding:10px;
+  margin-bottom:10px;
+  box-shadow:none;
+}
+button:hover{
+    background-color:#3E54C1;
+}
+ label {
+    display: block;
+   margin-top: 10px;
+   margin-bottom: 15px;
+}
+input {
+   padding: 10px;
+  margin-top:10px;
+     margin-bottom: 5px;
+     width: 100%;
+  border-radius:5px;
+  background-color:rgb(245, 154, 245);
+}
+output{
+  margin-top: 100px;
+  margin-bottom: 10px;
+}
+p{
+    font-size: small;
+    padding-left:30%
+}
+a{
+    color:#d784bb;
+}
+a:hover{
+    color:#3E54C1;
+}
+</style>
+
+    </head>
+    <body>
+        <div class="container" id="Converter">
+            <header>
+                <nav>
+                    <div class="left-nav">
+                        <a href="#home" target="_blank">Home</a>
+                        <a href="#CoF">Celsius to Fahrenheit</a>
+                        <a href="#foC">Fahrenheit to Celsius</a>
+                    </div>
+                </nav>
+            </header>
+         <main>
+            <h1>Temperature Converter</h1>
+<h4>Make use of this simple calculator and enjoy !</h4>
+            <section class="first" id="coF">
+                <label for="celsius">Enter temperature:<input id="celsius" type="number" placeholder="Enter temperature in celsius"/></label>
+            </section>
+            <button onclick="coF()">Convert</button>
+
+            <section class="second" id="foC">
+                <label for="fahrenheit">Enter temperature:<input id="fahrenheit" type="number" placeholder="Enter temperature in fahrenheit"></label>
+            </section>
+            <button onclick="foC()">Convert</button>
+            <div id="output"></div>
+         </main>
+       
+
+        <script>
+            function foC(){
+                let fahrenheitValue = document.getElementById("fahrenheit").value;
+                let celsiusValue = (fahrenheitValue - 32) * 5 / 9;
+                document.getElementById("celsius").value = celsiusValue.toFixed(3);
+                document.getElementById("output").innerText = `${fahrenheitValue}°F is equal to ${celsiusValue.toFixed(3)}°C`;
+            }
+             function coF(){
+                let celsiusValue = document.getElementById("celsius").value;
+                let fahrenheitValue = (celsiusValue * 9 / 5) + 32;
+                document.getElementById("fahrenheit").value = fahrenheitValue.toFixed(3);
+                document.getElementById("output").innerText= `${celsiusValue}°C is equal to ${fahrenheitValue.toFixed(3)}°F`;
+            }
+        </script>
+        <footer>
+            <p>No Copyright 
+                @ Akinbola Praisefield 2024</p>
+        </footer>
+
+    </body>
+</html>
