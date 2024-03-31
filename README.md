@@ -1,2 +1,2 @@
 # OIBSIP
-OASIS Web Development Internship
+OASIS BYTE Web Development Internship
