@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, intialscale =1.0">
+<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+<title>Jaderel Shoes</title>
+<style>
+body{
+    font-family: Garamond, Courier New;
+    width: 100%;
+    height: 100%
+    margin-right: -40px;
+    background-color:pink;
+}
+header{
+    position: fixed;
+    top:0;
+    left:0;
+    width: 100%;
+    padding:20px 10%;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    z-index: 100;
+    color: #000000;
+}
+footer a{
+font-size: 20px;
+}
+.top-nav{
+    font-size: 20px;
+    color: #000000;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left:35px;
+    margin-right: 5%;
+    justify-content:space-between;
+  padding-right:150px;
+}
+.bottom-nav{
+    align-items:center;
+    justify-content:space-between;
+    font-size:18px;
+    width:400px;
+    position:absolute;
+    padding:0 35%;
+    display:flex;
+}
+.crocs{
+    background: url('Landing8.jpg') no-repeat;
+    background-size:contain;
+    border-radius:35px;
+}
+.Sexy{
+    background: url('Landing2.jpg') no-repeat;
+    background-size:contain;
+    border-radius:25px;
+}
+.Coporate{
+    background: url('Landing1.jpg') no-repeat;
+    background-size:contain;
+    border-radius:25px;
+}
+.Flats{
+    background: url('Landing7.jpg') no-repeat;
+    background-size:contain;
+    border-radius:25px;
+}
+.Sneakers{
+    background: url('Landing3.jpg') no-repeat;
+    background-size:contain;
+    border-radius:25px;
+}
+.Slippers{
+    background: url('Landing4.jpg') no-repeat;
+    background-size:contain;
+    border-radius:25px;
+}
+.School{
+    background: url('Landing5.jpg') no-repeat;
+    background-size:contain;
+    border-radius:25px;
+}
+a{
+color: black;
+}
+a:visted{
+    color: #000000;
+}
+fieldset{
+    border: none;
+    margin-bottom:0px; 
+    margin-left:5%;
+    margin-right: 5%;
+}
+.as{
+    margin-top: 20%;
+}
+P{
+    font-size: 30px;
+}
+.crocs a{
+font-size: 45px;
+color: #000000;
+display:flex;
+text-align: center;
+align-items:center;
+justify-content:space-between;
+width:400px;
+position:absolute;
+padding:60% 35%;
+}
+.Sexy a{
+font-size: 45px;
+color: #000000;
+display:flex;
+text-align: center;
+align-items:center;
+justify-content:space-between;
+width:400px;
+position:absolute;
+padding:60% 35%;
+}
+.School a{
+font-size: 45px;
+color: #ffffff;
+display:flex;
+text-align: center;
+align-items:center;
+justify-content:space-between;
+width:400px;
+position:absolute;
+padding:60% 35%;
+}
+.bottom{
+    text-align: center;
+}
+.Slippers a{
+font-size: 45px;
+color: #000000;
+display:flex;
+text-align: center;
+align-items:center;
+justify-content:space-between;
+width:400px;
+position:absolute;
+padding:60% 35%;
+}
+.Sneakers a{
+font-size: 45px;
+color: #000000;
+display:flex;
+text-align: center;
+align-items:center;
+justify-content:space-between;
+width:400px;
+position:absolute;
+padding:60% 35%;
+}
+.Flats a{
+font-size: 45px;
+color: #000000;
+display:flex;
+text-align: center;
+align-items:center;
+justify-content:space-between;
+width:400px;
+position:absolute;
+padding:60% 35%;
+}
+.Coporate a{
+font-size: 35px;
+color: #ffffff;
+display:flex;
+text-align: center;
+align-items:center;
+justify-content:space-between;
+width:400px;
+position:absolute;
+padding:60% 35%;
+}
+</style>
+    </head>
+    <body>
+        <div> 
+            <header>
+                <a href="#P" class="logo"><img src="Logo1.png" width="45%" height="45%"></a>
+               <!-- <a href ="jaderel">Home</a>-->
+               <div class="top-nav"> 
+                <a href="#about">About</a>
+                <a href="#new">New Collection</a>
+                <a href="#basket"><i class='bx bxs-basket'></i></a>
+                </div>
+            </header>
+        </div>
+<div class="as">
+        <!--Sexyheels.c, sexy, customer.care, amongst others are just placeholders
+        I also couldn't understand how the individual pading worked hence why the numerous <br>, but I'm working on it-->
+        <fieldset class="crocs" id="new">
+            <a href="Sexyheels.c">Crocs</a>
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        </fieldset>
+        <fieldset class="Sexy">
+            <a href="Sexyheels.c">Sexy</a>
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        </fieldset>
+        <fieldset class="Coporate">
+            <a href="Sexyheels.c">Coporate</a>
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+           
+        </fieldset>
+        <fieldset class="Sneakers">
+            <a href="Sexyheels.c">Sneakers</a>
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        </fieldset>
+        <fieldset class="Flats">
+            <a href="Sexyheels.c">Flats</a>
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        </fieldset>
+        <fieldset class="Slippers">
+            <a href="Sexyheels.c">Slippers</a>
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        </fieldset>
+        <fieldset class="School">
+            <a href="Sexyheels.c">School</a>
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        </fieldset>
+        <fieldset class="bottom">
+            <p class="mlogo"><i class='bx bxs-package' ></i></p>
+            <p>Worldwide Shipping And Delivery</p><br><br>
+            <p class="mlogo"><i class='bx bxs-message-rounded-dots' ></i></p>
+            <p>Feel free to <a href="https://gmail.com/">email us</a></p>
+            <br><br><br>
+        </fieldset>
+    </div>
+        <footer>
+           <fieldset> <h2><a href="Customer.care" id="about" >About Us</a></h2></fieldset>
+        <fieldset><h2><a href="Customer.care" >Customer Care</a></h2></fieldset>
+        <fieldset> <h2><a href="Customer.care" >Help</a></h2></fieldset>
+            
+          <fieldset><p>@ Jaderel 2024</p>
+            <div class="bottom-nav">
+                <a href="https://tiktok.com/" target="blank"><i class='bx bxl-tiktok'></i></a>
+                <a href="https://www.instagram.com/" target="blank"><i class='bx bxl-instagram'></i></a>
+                <a href="https://pinterest.com/" target="blank"><i class='bx bxl-pinterest'></i></a>
+                <a href="https://www.linkedin.com/in/praisefield-akinbola/" target="blank"><i class='bx bxl-linkedin' ></i></a>
+            </div><br><br>
+            <label for="currency">
+                <select id="currency" name="currency">
+                  <option value="">UK Pounds(£)</option>
+                  <option value="1">USA Dollars($)</option>
+                  <option value="2">Nigeria Naira (₦)</option>
+                  <option value="3">Japan Yen(¥)</option>
+                  <option value="4">Europe Euro(€)</option>
+                </select>
+              </label>
+            </fieldset>
+        </footer>
+    </body>
+</html>
