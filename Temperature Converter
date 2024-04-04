@@ -1,109 +1,82 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
     <head>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="viewport" content="width=device-width, initial-scale =1.0">
         <title>Temperature Converter</title>
-<!--<link rel="stylesheet" href="styles.css">-->
-<style>
-    body{
-    font-family:sans-serif;
-    display: flex;
-    align-items: center;
-    margin: auto;
-    background-color: #c13e95;
-    height: 150vh;
-    justify-content:center;
-  
-}
-button{
-    align-items: center;
-    text-align: center;
-    color: black;
-    background-color:#d784bb;
-    border-radius: 8px;
-  padding:10px;
-  margin-bottom:10px;
-  box-shadow:none;
-}
-button:hover{
-    background-color:#3E54C1;
-}
- label {
-    display: block;
-   margin-top: 10px;
-   margin-bottom: 15px;
-}
-input {
-   padding: 10px;
-  margin-top:10px;
-     margin-bottom: 5px;
-     width: 100%;
-  border-radius:5px;
-  background-color:rgb(245, 154, 245);
-}
-output{
-  margin-top: 100px;
-  margin-bottom: 10px;
-}
-p{
-    font-size: small;
-    padding-left:30%
-}
-a{
-    color:#d784bb;
-}
-a:hover{
-    color:#3E54C1;
-}
-</style>
-
+        <style>
+            body{
+                font-family: cursive;
+                font-family: cursive;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+                margin: 0;
+                font-size: large;
+            }
+            .converter{
+                margin:20px;
+                text-align: center;
+                padding: 20px;
+                border: 1px soliid #ccc;
+                border-radius: 10px;
+            }
+            .converter label{
+                display:block;
+                margin-bottom: 10px;
+                font-family: cursive;
+            }
+            .converter input[type="number"]{
+                width:100px;
+                padding:5px;
+                border:1px solid #ccc;
+                border-radius: 8px;
+                margin-bottom: 10px;
+            }
+            .converter select{
+                padding:5px;
+                border:1px solid #ccc;
+                border-radius: 8px;
+            }
+            .result{
+                margin-top: 10px;
+                font-weight: 400;
+            }
+            button{
+                display: inline-block;
+                border-radius: 8px;
+            }
+        </style>
     </head>
     <body>
-        <div class="container" id="Converter">
-            <header>
-                <nav>
-                    <div class="left-nav">
-                        <a href="#home" target="_blank">Home</a>
-                        <a href="#CoF">Celsius to Fahrenheit</a>
-                        <a href="#foC">Fahrenheit to Celsius</a>
-                    </div>
-                </nav>
-            </header>
-         <main>
-            <h1>Temperature Converter</h1>
-<h4>Make use of this simple calculator and enjoy !</h4>
-            <section class="first" id="coF">
-                <label for="celsius">Enter temperature:<input id="celsius" type="number" placeholder="Enter temperature in celsius"/></label>
-            </section>
-            <button onclick="coF()">Convert</button>
+        <div class="converter">
+            <label for="temperature">Temperature</label>
+            <input type="number" id="temperature" placeholder="Enter Temperature"/>
+            <label for="conversionType">Convert To</label>
+            <select id="conversionType">
+                <option value="C">Celsius</option>
+                <option value="F">Fahrenheit</option>
+            </select>
 
-            <section class="second" id="foC">
-                <label for="fahrenheit">Enter temperature:<input id="fahrenheit" type="number" placeholder="Enter temperature in fahrenheit"></label>
-            </section>
-            <button onclick="foC()">Convert</button>
-            <div id="output"></div>
-         </main>
-       
-
+            <button onclick="convertT()">Convert</button>
+            <div class="result" id="result"></div>
+        </div>
         <script>
-            function foC(){
-                let fahrenheitValue = document.getElementById("fahrenheit").value;
-                let celsiusValue = (fahrenheitValue - 32) * 5 / 9;
-                document.getElementById("celsius").value = celsiusValue.toFixed(3);
-                document.getElementById("output").innerText = `${fahrenheitValue}°F is equal to ${celsiusValue.toFixed(3)}°C`;
-            }
-             function coF(){
-                let celsiusValue = document.getElementById("celsius").value;
-                let fahrenheitValue = (celsiusValue * 9 / 5) + 32;
-                document.getElementById("fahrenheit").value = fahrenheitValue.toFixed(3);
-                document.getElementById("output").innerText= `${celsiusValue}°C is equal to ${fahrenheitValue.toFixed(3)}°F`;
+            function convertT(){
+                var temperature = document.getElementById("temperature").value;
+                var conversionType= document.getElementById("conversionType").value;
+                var result= document.getElementById("result");
+
+                if(conversionType === "C") {
+                    var C = (temperature - 32) * 5/9;
+                    result.textContent = temperature + " °F is " + C.toFixed(3) +"  °C";
+                }
+                else if(conversionType === "F"){
+                    var F = (temperature * 9/5) + 32;
+                    result.textContent = temperature + "  °C is " + F.toFixed(3) + "  °F";
+                }
             }
         </script>
-        <footer>
-            <p>No Copyright 
-                @ Akinbola Praisefield 2024</p>
-        </footer>
-
     </body>
 </html>
